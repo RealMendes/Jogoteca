@@ -1,0 +1,16 @@
+{% extends "template.html" %}
+{% block conteudo %}
+   
+
+        <form method="post" action="{{url_for('autenticar')}}" class="form-signin">
+            <img class="mb-4" src="https://icons-for-free.com/iconfiles/png/512/game+controller+video+game+icon-1320087273514764593.png" alt="" width="72" height="72">
+            <h1 class="h3 mb-3 font-weight-normal">Jogoteca</h1>
+            <label for="inputEmail" class="sr-only"></label>
+            <input type="email" id="inputEmail" name="Email" class="form-control" placeholder="Email address" required autofocus>
+            <label for="inputPassword" class="sr-only"></label>
+            <input type="password" id="inputPassword" name="inputPassword" class="form-control" placeholder="Password" required>
+            <button class="btn btn-primary btn-sm dist" type="submit">Sign in</button>
+            <p class="mt-5 mb-3 text-muted">&copy; RealMendes</p>
+          </form>
+{% endblock %}          
+    
